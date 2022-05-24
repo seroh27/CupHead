@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane fx:id="pane" prefHeight="750" prefWidth="1200" styleClass="loginMenu" stylesheets="@../css/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.LoginPageController">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="424.0" layoutY="225.0" prefHeight="177.0" prefWidth="352.0" spacing="10.0" AnchorPane.bottomAnchor="348.0" AnchorPane.leftAnchor="424.0" AnchorPane.rightAnchor="424.0" AnchorPane.topAnchor="225.0">
+         <children>
+            <Label alignment="CENTER" prefHeight="29.0" prefWidth="91.0" text="username">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <TextField fx:id="username" alignment="TOP_LEFT" onAction="#usernameTyping" prefHeight="3.0" prefWidth="342.0" promptText="username" stylesheets="@../css/style.css" />
+            <Label text="password">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font></Label>
+            <TextField fx:id="password" onAction="#passwordTyping" prefHeight="31.0" prefWidth="252.0" promptText="password" stylesheets="@../css/style.css" />
+         </children>
+      </VBox>
+      <Button fx:id="skip" layoutX="393.0" layoutY="456.0" mnemonicParsing="false" onAction="#skip" prefHeight="36.0" prefWidth="94.0" style="-fx-background-color: gray;" stylesheets="@../css/styleSheet.css" text="Skip" />
+      <Button fx:id="login" layoutX="708.0" layoutY="456.0" mnemonicParsing="false" onAction="#login" prefHeight="36.0" prefWidth="94.0" stylesheets="@../css/styleSheet.css" text="Login" />
+      <Button fx:id="register" layoutX="548.0" layoutY="456.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#register" prefHeight="35.0" prefWidth="105.0" stylesheets="@../css/styleSheet.css" text="Register" />
+      <Button fx:id="quit" layoutX="23.0" layoutY="39.0" mnemonicParsing="false" onAction="#quit" stylesheets="@../css/styleSheet.css" text="Quit Game" />
+      <Label fx:id="errorMessage" alignment="CENTER" layoutX="310.0" layoutY="513.0" prefHeight="31.0" prefWidth="574.0" visible="false" />
+      <Label alignment="CENTER" layoutX="343.0" layoutY="107.0" maxWidth="621.0" minWidth="-Infinity" prefHeight="49.0" prefWidth="500.0" stylesheets="@../css/style.css" text="Please enter username password">
+         <font>
+            <Font name="System Bold" size="30.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>
